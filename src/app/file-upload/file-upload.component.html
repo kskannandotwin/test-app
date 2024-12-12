@@ -1,0 +1,14 @@
+<!-- file-upload.component.html -->
+<div class="file-upload-container">
+    <mat-card>
+        <mat-card-title>File Upload</mat-card-title>
+        <mat-card-content>
+            <input type="file" (change)="onFileChange($event)" />
+            <mat-form-field appearance="fill" class="file-name-field">
+                <mat-label>Selected File</mat-label>
+                <input matInput [value]="fileName" readonly>
+            </mat-form-field>
+            <button mat-raised-button color="primary" (click)="uploadFile()" [disabled]="!selectedFile">Upload</button>
+        </mat-card-content>
+    </mat-card>
+</div>

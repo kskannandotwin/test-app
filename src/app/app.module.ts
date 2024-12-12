@@ -13,9 +13,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FileManagerComponent } from './file-manager/file-manager.component';
+import { FileUploadComponent } from './file-upload/file-upload.component';
 
 @NgModule({
-  declarations: [AppComponent, FileManagerComponent],
+  declarations: [AppComponent, FileManagerComponent, FileUploadComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
